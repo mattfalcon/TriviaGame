@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rangers Trivia</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+</head>
+<body>
+	<audio autoplay>
+  <source src="./css/ballgame.ogg" type="audio/mpeg">
+	</audio>
+	<div id ="container">
+	<header>
+		<h1>Rangers Trivia</h1>
+		<p>Test your Knowledge in <strong>Texas Rangers history</strong>. Click Start to Begin.</p>
+		Time Left (Seconds): <input type="text" value="30" id="txtBox"/>
+		<input type="button" value="Start" onclick="startTimer('txtBox')" />
+		<input type="button" value="Reset" onclick="resetTimer()"/>
+	</header>
+		<br />
+	<section>
+	<div id ="results"></div>
+	<!--on submit event handler return function, disabling default form function-->
+	<form name="quizForm" onsubmit="return submitAnswers ()">
+	<h3>1. At what age did Pudge Rodriguez make his major league debut with the Rangers?</h3>
+	<input type="radio" name="Q1" value="a" id="Q1a">a. 23	<br>
+	<input type="radio" name="Q1" value="b" id="Q1b">b. 21	<br>
+	<input type="radio" name="Q1" value="c" id="Q1c">c. 19	<br>
+	<input type="radio" name="Q1" value="d" id="Q1d">d. 29  <br>	
+
+	<h3>2. In what year did the Washington Nationals move to Texas and become the Texas Rangers?</h3>
+	<input type="radio" name="Q2" value="a" id="Q2a">a. 1963 <br>
+	<input type="radio" name="Q2" value="b" id="Q2b">b. 1981 <br>
+	<input type="radio" name="Q2" value="c" id="Q2c">c. 1990 <br>
+	<input type="radio" name="Q2" value="d" id="Q2d">d. 1972 <br>	
+
+	<h3>3. Which President of the United States was also owner of the Texas Rangers?</h3>
+	<input type="radio" name="Q3" value="a" id="Q3a">a. Jimmy Carter <br>
+	<input type="radio" name="Q3" value="b" id="Q3b">b. Ronald Reagan <br>
+	<input type="radio" name="Q3" value="c" id="Q3c">c. George W Bush <br>
+	<input type="radio" name="Q3" value="d" id="Q3d">d. Lyndon B Johnson <br>	
+
+	<h3>4. Which pitcher has the most career wins with the Texas Rangers?</h3>
+	<input type="radio" name="Q4" value="a" id="Q4a">a. Charlie Hough <br>
+	<input type="radio" name="Q4" value="b" id="Q4b">b. Kennie Rogers <br>
+	<input type="radio" name="Q4" value="c" id="Q4c">b. Bobbie Witt <br>
+	<input type="radio" name="Q4" value="c" id="Q4c">b. Fergie Jenkins <br>
+
+	<h3>5. Who has the most career home runs with the Texas Rangers?</h3>
+	<input type="radio" name="Q5" value="a" id="Q1a">a. Ruben Sierra <br>
+	<input type="radio" name="Q5" value="b" id="Q2b">b. Pudge Rodriguez <br>
+	<input type="radio" name="Q5" value="c" id="Q3c">c. Rafael Palmeiro	<br>
+	<input type="radio" name="Q5" value="d" id="Q4d">d. Juan Gonzalez <br>	
+
+	<br>
+	<br>
+	<input type="submit" value="Submit Answers">
+	</form>
+	</section>
+	<footer>
+		<p>Copyright &copy; 2017, All rights reserved.</p>
+	</footer>
+	</div>
+	<script src="./js/script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>
